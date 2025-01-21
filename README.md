@@ -24,7 +24,7 @@ Hola, soy José María Luyo Campos. Este proyecto consiste en crear una aplicaci
 
 ## Estado del Proyecto
 
-Este proyecto está en construcción. Estoy trabajando activamente en él para agregar más funcionalidades y mejorar la experiencia del usuario.
+Este proyecto ha sido terminado. De todas maneras, este proyecto tengo pensado que en un futuro se expanda y tenga más funcionalidades, las cuales te invito a dejar en issues a manera de feedback.
 
 ## Gestión del Proyecto
 
