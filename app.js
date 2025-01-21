@@ -20,7 +20,23 @@ function limpiarInputs() {
 function actualizarLista() {
     let listaAmigos = document.getElementById('listaAmigos');
     listaAmigos.innerHTML = '';
+    if(amigos.length == 0) {
+        return;
+    }
     amigos.forEach(amigo => {
         listaAmigos.innerHTML += `<li>${amigo}</li>`
     });
+}
+
+function sortearAmigo() {
+    if(amigos.length === 0) {
+        alert('La lista esta vacía');
+        return;
+    }
+    const index = parseInt(Math.floor(Math.random() * amigos.length));
+    const amigoSorteado = amigos[index];
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = `El amigo secreto sorteado es: ${amigoSorteado}`;
+    amigos = [];
+    actualizarLista();
 }
