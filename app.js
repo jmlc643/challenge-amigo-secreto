@@ -6,8 +6,8 @@ function agregarAmigo() {
     if (inputAmigo.value) {
         const amigo = inputAmigo.value;
         amigos.push(amigo);
-        console.log(amigos);
         limpiarInputs();
+        actualizarLista();
     } else {
         alert("Por favor, inserte un nombre.");
     }
@@ -15,4 +15,12 @@ function agregarAmigo() {
 
 function limpiarInputs() {
     inputAmigo.value = "";
+}
+
+function actualizarLista() {
+    let listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = '';
+    amigos.forEach(amigo => {
+        listaAmigos.innerHTML += `<li>${amigo}</li>`
+    });
 }
